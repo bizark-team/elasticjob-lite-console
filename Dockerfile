@@ -1,4 +1,4 @@
-FROM adoptopenjdk:maven-openjdk8 as builder
+FROM adoptopenjdk/maven-openjdk8 as builder
 
 RUN curl -L -o /tmp/elasticjob-lite-console.tgz https://github.com/apache/shardingsphere-elasticjob/archive/refs/tags/2.1.5.tar.gz && \
     mkdir -p /opt && \
