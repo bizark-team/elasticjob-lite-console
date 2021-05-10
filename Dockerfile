@@ -7,7 +7,7 @@ RUN curl -L -o /tmp/elasticjob-lite-console.tgz https://github.com/apache/shardi
     cd /opt/shardingsphere-elasticjob/elastic-job-lite/elastic-job-lite-console && \
     mvn package -DskipTests && \
     cd /opt/shardingsphere-elasticjob/elastic-job-lite/elastic-job-lite-console/target && \
-    tar zxf elastic-job-lite-console-2.1.5.tar.gz
+    tar zxf elastic-job-lite-console-2.1.5.tar.gz && \
     mv /opt/shardingsphere-elasticjob/elastic-job-lite/elastic-job-lite-console/target/elastic-job-lite-console-2.1.5 /opt/elastic-job-lite-console
 
 FROM adoptopenjdk:8-jre-hotspot
